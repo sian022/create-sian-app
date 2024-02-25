@@ -1,0 +1,20 @@
+{
+  "name": "create-sian022-app",
+  "version": "1.0.0",
+  "description": "Generating boilerplates for Sian",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "create-sian-app": "./index.js"
+  },
+  "keywords": [],
+  "author": "sian022",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "fs-extra": "^11.2.0",
+    "readline-sync": "^1.4.10"
+  }
+}
