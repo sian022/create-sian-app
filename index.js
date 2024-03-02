@@ -67,7 +67,15 @@ if (confirmCreateDirectory) {
 
   fse
     .copy(templateDir, destination, { filter: filterFunc })
-    .then(() => console.log(`Successfully created ${destination}`.green))
+    .then(() => {
+      if (projectName === ".") {
+        console.log("\nDone. Now run: \n\n  npm install\n  npm run dev");
+      } else {
+        console.log(
+          `\nDone. Now run:\n\n  cd ${projectName}\n  npm install\n  npm run dev`
+        );
+      }
+    })
     .catch((err) => console.error(err));
 } else {
   console.log("Aborted creating a new template");
