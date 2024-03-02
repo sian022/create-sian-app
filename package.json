@@ -1,14 +1,15 @@
 {
   "name": "create-sian022-app",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Generating boilerplates for Sian",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "create-sian-app": "./index.js"
+    "create-sian-app": "https://raw.githubusercontent.com/sian022/create-sian-app/main/index.js"
   },
+  "preferGlobal": true,
   "keywords": [],
   "author": "sian022",
   "license": "ISC",
