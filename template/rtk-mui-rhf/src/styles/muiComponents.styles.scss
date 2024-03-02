@@ -1,0 +1,49 @@
+@import "./index.styles.scss";
+
+.customDialog {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 340px;
+
+  &__icon {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+      width: 140px;
+      object-fit: cover;
+    }
+  }
+
+  & &__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  & &__content {
+    font-size: 1.2rem;
+    color: gray;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+}
+
+.customModal {
+  border-radius: 8px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+}
